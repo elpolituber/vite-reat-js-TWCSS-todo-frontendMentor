@@ -12,7 +12,7 @@ const TodoItem = ({ todos,removeTodo,updateTodo }) => {
       "inline-block"}`} onClick={()=>updateTodo(id)}>
         {complete && <IconsCheck />}
       </button>
-      <p className={`text-gray-600 grow ${complete && "line-through"}`}>{title}</p>
+      <p className={`text-gray-600 grow dark:text-gray-400 ${complete && "line-through"}`}>{title}</p>
       <button className="flex-none" onClick={()=>removeTodo(id)}>
         <IconsCross />
       </button>

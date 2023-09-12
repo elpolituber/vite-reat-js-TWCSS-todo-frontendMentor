@@ -68,7 +68,9 @@ const App = () => {
     <div
       className="
       bg-[url('./assets/images/bg-mobile-light.jpg')] 
-      bg-contain bg-no-repeat bg-gray-300 min-h-screen"
+      bg-contain bg-no-repeat bg-gray-300 min-h-screen
+      dark:bg-gray-900 dark:bg-[url('./assets/images/bg-mobile-dark.jpg')]
+      transition-all duration-1000"
     >
       <Header/>
 
@@ -83,7 +85,7 @@ const App = () => {
 
         <TodoFilter changeFilters={changeFilters} filter={filter}/>
       </main>
-        <p className="text-center mt-8">
+        <p className="text-center mt-8 dark:text-gray-400 transition-all duration-1000">
           Drag and drop to render list
         </p>
     </div>
